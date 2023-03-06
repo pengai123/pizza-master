@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+.container {
+  padding: 10px;
+}
+
+.container .view-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+}
+
+.container .view-select span {
+  font-weight: 600;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.container .view-select button {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container .view-select .btn-owner {
+  border-radius: 10px 0 0 10px;
+}
+
+.container .view-select .btn-chef {
+  border-radius: 0 10px 10px 0;
+  margin-right: 50px;
+}
+
+.owner-view {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.owner-view .add-topping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 10px;
+}
+
+.chef-view {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-btns {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.form-btns Button {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=style.css.map */
