@@ -85,8 +85,18 @@ a {
   margin: 0 auto;
 }
 
+.chef-view .add-pizza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 10px;
+}
+
 .form-btns {
-  margin-top: 20px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

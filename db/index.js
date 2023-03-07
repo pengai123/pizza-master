@@ -1,7 +1,5 @@
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config()
-  console.log('NODE_ENV:', process.env.NODE_ENV)
-  console.log('MONGODB_URI:', process.env.MONGODB_URI)
 }
 const mongoose = require('mongoose')
 mongoose.connect(process.env.MONGODB_URI, {
@@ -17,6 +15,7 @@ const Topping = mongoose.model('topping', {
 })
 
 const Pizza = mongoose.model('pizza', {
+  name: String,
   toppings: [String]
 })
 

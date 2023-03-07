@@ -15,17 +15,25 @@ function App() {
   const fetchToppings = async () => {
     const response = await fetch('/api/toppings')
     const data = await response.json()
-    console.log('data:', data)
+    console.log('toppings:', data)
     setToppings(data)
+  }
+
+  const fetchPizzas = async () => {
+    const response = await fetch('/api/pizzas')
+    const data = await response.json()
+    console.log('pizzas:', data)
+    setPizzas(data)
   }
 
   useEffect(() => {
     fetchToppings()
+    fetchPizzas()
   }, [])
 
   return (
     <div className="App">
-      <Context.Provider value={{ toppings, setToppings, categories }}>
+      <Context.Provider value={{ toppings, setToppings, pizzas, setPizzas, categories }}>
         <NavBar />
         <div className='container'>
           <div className='view-select'>
