@@ -20,7 +20,7 @@ app.get('/api/toppings', async (req, res) => {
 app.post('/api/toppings', async (req, res) => {
   const record = await Topping.findOne({ name: req.body.name })
   if (record) {
-    return res.status(400).json({ message: 'The topping already exists.' })
+    return res.status(400).json({ message: `The topping ${req.body.name} already exists.` })
   }
   const newTopping = await Topping.create(req.body)
   res.json(newTopping)
@@ -45,10 +45,10 @@ app.get('/api/pizzas', async (req, res) => {
 })
 
 app.post('/api/pizzas', async (req, res) => {
-  // const record = await Pizza.findOne({ name: req.body.name })
-  // if (record) {
-  //   return res.status(400).json({ message: 'The pizza already exists.' })
-  // }
+  const record = await Pizza.findOne({ name: req.body.name })
+  if (record) {
+    return res.status(400).json({ message: `The pizza with name ${req.body.name} already exists.` })
+  }
   const newPizza = await Pizza.create(req.body)
   console.log('newPizza:', newPizza)
   res.json(newPizza)

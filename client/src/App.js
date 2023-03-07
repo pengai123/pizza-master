@@ -38,8 +38,8 @@ function App() {
         <div className='container'>
           <div className='view-select'>
             <span>View:</span>
-            <button className='btn-owner' onClick={() => setRole('owner')} style={{backgroundColor: role === 'owner' ? 'aqua' : 'lightgray'}}>Owner</button>
-            <button className='btn-chef' onClick={() => setRole('chef')} style={{backgroundColor: role === 'chef' ? 'aqua' : 'lightgray'}}>Chef</button>
+            <button className='btn-owner' onClick={() => setRole('owner')} style={{ backgroundColor: role === 'owner' ? '#ef476f' : 'rgba(1, 1, 1, 0.1)' }}>OWNER</button>
+            <button className='btn-chef' onClick={() => setRole('chef')} style={{ backgroundColor: role === 'chef' ? '#ef476f' : 'rgba(1, 1, 1, 0.1)' }}>CHEF</button>
           </div>
           {role === 'owner' && <OwnerView />}
           {role === 'chef' && <ChefView />}
